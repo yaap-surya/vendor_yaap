@@ -15,7 +15,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MatLog \
     OpenDelta \
-    PhotonCamera
 
 ifneq ($(TARGET_BUILD_GAPPS),true)
 PRODUCT_PACKAGES += \
