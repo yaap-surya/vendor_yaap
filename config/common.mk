@@ -134,6 +134,9 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 endif
 
+# Include Lawnchair makefile.
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+
 ifeq ($(TARGET_BUILD_GAPPS),true)
     $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 endif
